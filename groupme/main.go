@@ -22,7 +22,8 @@ func init() {
 }
 
 var program = cli.Program{
-	Name: "groupme",
+	Name:        "groupme",
+	Description: "GroupMe is a command-line tool for accessing the GroupMe API.",
 	Commands: []cli.Command{
 		groupsCommand,
 		messagesCommand,
