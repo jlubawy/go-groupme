@@ -89,7 +89,7 @@ type Error struct {
 }
 
 func (err Error) Error() string {
-	return fmt.Sprintf("%+v", err)
+	return fmt.Sprintf("%+v", err.Meta.Errors)
 }
 
 // GroupsService implements all the methods needed to access the groups endpoints.
